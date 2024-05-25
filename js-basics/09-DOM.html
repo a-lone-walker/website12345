@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      DOM
+    </title>
+  </head>
+  <body>
+    <button>Hello</button>
+    <button class="jsbutton">Second button</button>
+    
+    <script>
+
+      console.log(document.querySelector("button").innerHTML);
+      console.log(document.querySelector("body"));
+      console.log(document.querySelector('.jsbutton'));
+
+
+console.log(document.title);
+document.title='changed'
+console.log(document.body);
+console.log(typeof document.body);
+console.log(document.body.innerHTML);
+document.body.innerHTML='changed'
+document.body.innerHTML='hello';
+document.title='Goodjob';
+console.log(document.body.innerHTML)='hello'
+document.innerHTML.title='changed2'
+
+// document.body is inside the document. If the selector refers to an element located within the document body they'll both return that element. If not, document.querySelector will execute and document.body.querySelector will not.
+      
+
+  </script>
+    </body>
+  </html>
